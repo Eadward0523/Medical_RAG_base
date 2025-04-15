@@ -2,8 +2,11 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{listings}
 
-\geometry{a4paper, margin=1in}
+% Adjust margins to give more space
+\geometry{a4paper, margin=0.75in}
 
 \title{Weekly Report: LLM + RAG Model Project}
 \author{Edward Yang}
@@ -13,58 +16,56 @@
 
 \maketitle
 
-\section*{Week Overview}
+\section*{Week Overview: 070425 - 130425}
 \begin{itemize}
     \item \textbf{Project Name:} LLM + RAG Model Development for Disease Diagnosis
-    \item \textbf{Week:} 070425 - 130425
-    \item \textbf{Goals for the Week:}
-    \begin{itemize}
-        \item [Goal 1: Create Document preprocessing functions and Embedding Model for the Disease Dataset]
-        \item [Goal 2: Use vector search for retrieving relevant documents]
-        \item [Goal 3: Integrate the RAG model with the LLM for generating responses]
-        \item [Goal 4: Test the model with sample queries]
-        \item [Goal 5: Compare the model's output accuracy against the Non-RAG model ie. LLM-only. This can be done by creating a fine-tuning model to evaluate diagnostic accuracy of, the two models, trained on hte Hierarchical ICD-10 Disease Dataset, where partial matches at different levels of specificity have different clinical value. ie. the method done in the Medfound paper.]
-        \item [Goal 6: Create a report on the model's performance and potential improvements]
+    \item \textbf{Goals:}
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Goal 1:} Create Document preprocessing functions and Embedding Model for the Disease Dataset
+        \item \textbf{Goal 2:} Use vector search for retrieving relevant documents
+        \item \textbf{Goal 3:} Integrate the RAG model with the LLM for generating responses
+        \item \textbf{Goal 4:} Test the model with sample queries
+        \item \textbf{Goal 5:} Compare the model's output accuracy against the Non-RAG model (LLM-only). This can be done by creating a fine-tuning model to evaluate diagnostic accuracy of the two models, trained on the hierarchical ICD-10 Disease Dataset, where partial matches at different levels of specificity have different clinical value (similar to the method in the Medfound paper).
+        \item \textbf{Goal 6:} Create a report on the model's performance and potential improvements
     \end{itemize}
 \end{itemize}
 
 \section*{Progress}
 \begin{itemize}
     \item \textbf{Completed Tasks:}
-    \begin{itemize}
-        \item [Task 1]
-        \item [Task 2]
-        \item [Task 3]
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Task 1:} Created data\_loader.py and other tools for loading and preprocessing the dataset.
+        \item \textbf{Task 2:} Started on the embedding model, using the Sentence-BERT model.
     \end{itemize}
     \item \textbf{Ongoing Tasks:}
-    \begin{itemize}
-        \item [Task 1]
-        \item [Task 2]
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Task 1:} 
+        \item \textbf{Task 2:} 
     \end{itemize}
 \end{itemize}
 
 \section*{Challenges}
-\begin{itemize}
-    \item [Challenge 1: Description and potential solutions]
-    \item [Challenge 2: Description and potential solutions]
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Challenge 1:} Description and potential solutions
+    \item \textbf{Challenge 2:} Description and potential solutions
 \end{itemize}
 
 \section*{Next Steps}
 \begin{itemize}
     \item \textbf{Planned Tasks for Next Week:}
-    \begin{itemize}
-        \item [Task 1]
-        \item [Task 2]
-        \item [Task 3]
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Task 1:} Description
+        \item \textbf{Task 2:} Description
+        \item \textbf{Task 3:} Description
     \end{itemize}
     \item \textbf{Milestones to Achieve:}
-    \begin{itemize}
-        \item [Milestone 1]
-        \item [Milestone 2]
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Milestone 1:} Description
+        \item \textbf{Milestone 2:} Description
     \end{itemize}
 \end{itemize}
 
 \section*{Additional Notes}
-[Include any additional notes, observations, or comments.]
+Include any additional notes, observations, or comments.
 
 \end{document}
