@@ -1,0 +1,20 @@
+# dependencies for the project
+numpy
+pandas
+tqdm
+transformers
+sentence-transformers
+accelerate
+bitsandbytes
+flash-attn
+nltk
+datasets
+fire
+evaluate
+pathlib
+sentencepiece
+requests
+chromadb
+
+
+

@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{listings}
+
+% Adjust margins to give more space
+\geometry{a4paper, margin=0.75in}
+
+\title{Weekly Report: LLM + RAG Model Project}
+\author{Edward Yang}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Week Overview: 070425 - 130425}
+\begin{itemize}
+    \item \textbf{Project Name:} LLM + RAG Model Development for Disease Diagnosis
+    \item \textbf{Goals:}
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Goal 1:} Create Document preprocessing functions and Embedding Model for the Disease Dataset
+        \item \textbf{Goal 2:} Use vector search for retrieving relevant documents
+        \item \textbf{Goal 3:} Integrate the RAG model with the LLM for generating responses
+        \item \textbf{Goal 4:} Test the model with sample queries
+        \item \textbf{Goal 5:} Compare the model's output accuracy against the Non-RAG model (LLM-only). This can be done by creating a fine-tuning model to evaluate diagnostic accuracy of the two models, trained on the hierarchical ICD-10 Disease Dataset, where partial matches at different levels of specificity have different clinical value (similar to the method in the Medfound paper).
+        \item \textbf{Goal 6:} Create a report on the model's performance and potential improvements
+    \end{itemize}
+\end{itemize}
+
+\section*{Progress}
+\begin{itemize}
+    \item \textbf{Completed Tasks:}
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Task 1:} Created data\_loader.py and other tools for loading and preprocessing the dataset.
+        \item \textbf{Task 2:} Started on the embedding model, using the Sentence-BERT model.
+        \item \textbf{Task 3:} Used ChromaDB as a vector database for storing the embeddings.
+    \end{itemize}
+    \item \textbf{Ongoing Tasks:}
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Task 1:} Creating semantic search pipeline
+        \item \textbf{Task 2:} Implementing LLM for generating responses
+        \item \textbf{Task 3:} 
+    \end{itemize}
+\end{itemize}
+
+\newpage
+
+\section*{Next Steps}
+\begin{itemize}
+    \item \textbf{Planned Tasks for Next Week:}
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Task 1:} Fine-tuning the model for evaluating diagnostic accuracy
+        \item \textbf{Task 2:} comparing model accuracy against non-RAG model
+    \end{itemize}
+    \item \textbf{Milestones to Achieve:}
+\end{itemize}
+
+\section*{Additional Notes}
+
+\end{document}
